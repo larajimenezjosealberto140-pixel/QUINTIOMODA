@@ -1,0 +1,254 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #006633; /* Verde oscuro principal */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #000; /* Negro */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00aa55; /* Verde medio al pasar el mouse */
+}
+
+section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #006633; /* Verde oscuro en títulos */
+}
+
+/* Estilo para el slider de imágenes */
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.slider img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Modelos más reconocidos */
+.modelos-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.modelos-lista li {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.modelos-lista img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+}
+
+.modelos-lista div {
+  padding: 15px;
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Videos */
+iframe {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Enlaces útiles */
+section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+section ul li a {
+  color: #006633; /* Verde oscuro */
+  text-decoration: none;
+}
+
+section ul li a:hover {
+  color: #00aa55; /* Verde medio */
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #000; /* Negro */
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #00aa55; /* Verde medio */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #00994d; /* Verde más claro al pasar el mouse */
+}
+/* Encabezado */
+header {
+  background-color: #006633; /* verde oscuro */
+  color: white;
+  padding: 20px;
+}
+
+/* Contenedor del logo y el título */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* logo a la izquierda, texto a la derecha */
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Imagen del logo */
+.logo-container img {
+  width: 80px;       /* ajusta el tamaño a tu gusto */
+  height: auto;
+  border-radius: 8px; /* opcional */
+}
+
+/* Título del encabezado */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+/* Encabezado general */
+header {
+  background-color: #006633; /* Verde oscuro */
+  color: white;
+  padding: 20px 40px;
+  position: relative;
+}
+
+/* Contenedor del logo y texto */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centra el texto en el medio */
+  position: relative;
+}
+
+/* Logo alineado a la izquierda */
+.logo-container .logo {
+  position: absolute;
+  left: 40px; /* distancia desde el borde izquierdo */
+  width: 80px;
+  height: auto;
+}
+
+/* Título centrado */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.modelos-lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 25px; /* espacio entre los productos */
+  list-style: none; /* quita los puntos de lista */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px; /* centra el contenido */
+}
+
+.modelos-lista li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modelos-lista li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.modelos-lista img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.modelos-lista strong {
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.modelos-lista p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+/* Fondo general de la página */
+body {
+  background-color: #145a32; /* 💚 verde claro agradable */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .modelos-lista {
+    grid-template-columns: 1fr;
+  }
+  .logo-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
